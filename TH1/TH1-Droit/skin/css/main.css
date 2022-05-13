@@ -4,6 +4,7 @@ light teal : #e0ecec
 */
 
 /* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&family=Patrick+Hand&display=swap');
 @font-face {
 	font-family: 'fontello';
 	src: url('../font/fontello.eot');
@@ -29,6 +30,11 @@ body {
 }
 p{
 	margin:0.9em;
+	font-family: 'Baloo 2', cursive;
+}
+
+ul{
+	font-family: 'Baloo 2', cursive;
 }
 code{
 	font-size: larger;
@@ -59,6 +65,7 @@ code{
 	font-size:1.5em;
 	padding-right: 1em;
 	padding-top: 0.5em;
+	font-family: 'Patrick Hand', cursive;
 }
 .default #accessibility, .sco #accessibility{
 	position: absolute;
@@ -123,7 +130,7 @@ code{
 .default #menu{
 	order:2;
 	flex: 1 1 auto;
-	margin-bottom:60px;
+	margin: bottom 8px;0px;
 }
 .default .schActive #menu{
 	order:3;
@@ -206,7 +213,7 @@ code{
 }
 .default #main{
 	background: url(../img/tpl/back-bottom.svg) no-repeat bottom;
-	background-size: 100% 60px;
+    background-size: 100% 100px;
 }
 
 /*=== DEFAULT LAYOUT - TOOLS MENU ============================================*/
@@ -342,16 +349,17 @@ code{
 	display:inline-block;
 	padding: 1px 5px;
 	margin-bottom:3px;
+	font-size:11px;
 }
 .default #menu .mnu .sel_yes >.lbl .item span, .default #content ul.plan .sel_yes > span {
-	background-color: #434e52;
+	background-color: #525C96;
 	color:white;
 	border-radius:5px;
 }
 
 /*=== DEFAULT LAYOUT - NAVIGATION BUTTONS ====================================*/
 .default #navigation{
-	text-align:right;
+	text-align:center;
 }
 .default #navigation nav{
 	display:inline-block;
@@ -498,13 +506,13 @@ code{
 	display:inline-block;
 	color: white;
 	height: 40px;
-	padding-right: 50px;
+	padding-right: 40px;
 	padding-left: 10px;
-	background: url(../img/tpl/button-start.svg) no-repeat right;
-	background-size: 40px 40px;
+	background: url(../img/tpl/right-arrow.svg) no-repeat right;
+	background-size: 30px 30px;
 	background-color: rgba(67, 78, 82, 0.7);
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 .home #navigation a span{
 	display:inline-block;
@@ -723,6 +731,7 @@ section.article > .hBk_ti, .sco section.article > .mainContent_ti{
 	background-repeat: no-repeat;
 	padding-bottom:4px;
 	font-size: 1.6em;
+	font-family: 'Balsamiq Sans', cursive;
 }
 section > .hBk_ti, .sco section > .mainContent_ti{
 	background-image: linear-gradient(to right, #434e52 0%,rgba(0,0,0,0) 100%);
@@ -732,6 +741,7 @@ section > .hBk_ti, .sco section > .mainContent_ti{
 	padding-bottom:4px;
 	font-size: 1.3em;
 	margin-top:25px;
+	font-family: 'Balsamiq Sans', cursive;
 }
 figcaption{
 	vertical-align: middle;
@@ -3159,6 +3169,16 @@ body.sco{
 /* === START - RESPONSIVE DESIGN ============================================ */
 
 /* tablets - portrait */
+@media (max-width : 985px){
+	.default #header h1, .sco #header h1 {
+		font-size: 21px;
+	}
+
+}
+
+
+
+
 @media (max-device-width: 800px) and (orientation: portrait){ 
 	.default #toolbox{
 		display:none;
