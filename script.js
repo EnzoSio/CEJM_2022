@@ -9,6 +9,7 @@
 
         //Commande
          const menu_th1 = document.querySelector(".menuth1");
+         
          const menu_th2 = document.querySelector(".menuth2");
          const menu_th3 = document.querySelector(".menuth3");
          const menu_th4 = document.querySelector(".menuth4");
